@@ -295,14 +295,29 @@ body {
         opacity: 1;
     }
 }
+
+/* --- Instagram Embed Styling --- */
 .instagram-wrapper {
   display: flex;
-  justify-content: flex-start; /* Align left */
-  margin-top: 2rem;            /* Some spacing from content card */
-  margin-left: 1rem;           /* Match your content card padding if any */
+  justify-content: flex-start;   /* align left with content card */
+  margin-top: 2.5rem;            /* space from the card above */
+  margin-bottom: 2rem;           /* space below, if needed */
 }
 
-.instagram-media {
+.instagram-card {
+  background: #fff;
+  border-radius: 20px;           /* match your card radius */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* soft shadow */
+  padding: 1rem;
   max-width: 540px;
   width: 100%;
 }
+
+/* Center on small screens */
+@media (max-width: 768px) {
+  .instagram-wrapper {
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+
