@@ -295,3 +295,14 @@ body {
         opacity: 1;
     }
 }
+.instagram-wrapper {
+  display: flex;
+  justify-content: flex-start; /* Align left */
+  margin-top: 2rem;            /* Some spacing from content card */
+  margin-left: 1rem;           /* Match your content card padding if any */
+}
+
+.instagram-media {
+  max-width: 540px;
+  width: 100%;
+}
