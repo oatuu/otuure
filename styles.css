@@ -313,12 +313,6 @@ body {
   margin-left: 0;                      /* align with card edge */
 }
 
-/* Hover effect – subtle lift */
-.instagram-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  border-color: rgba(0, 0, 0, 0.1);
-}
 
 /* Make sure embed fits inside */
 .instagram-card .instagram-media {
