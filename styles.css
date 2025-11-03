@@ -302,7 +302,13 @@ body {
   margin-left: 1rem;           /* Match your content card padding if any */
 }
 
-.instagram-media {
+.instagram-media1 {
+  max-width: 540px;
+  width: 100%;
+margin-top: 10px;
+}
+
+.instagram-media2 {
   max-width: 540px;
   width: 100%;
 }
