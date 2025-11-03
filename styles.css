@@ -1,0 +1,297 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(180deg, hsl(220, 20%, 99%), hsl(220, 20%, 97%));
+    min-height: 100vh;
+    color: hsl(220, 20%, 10%);
+    line-height: 1.6;
+}
+
+/* Layout */
+.page-container {
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 4rem 1rem;
+    }
+}
+
+.content-wrapper {
+    max-width: 56rem;
+    margin: 0 auto;
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Header Card */
+.header-card {
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 30px -10px hsl(217, 91%, 35%, 0.3);
+    background: white;
+}
+
+.header-gradient {
+    background: linear-gradient(135deg, hsl(217, 91%, 35%), hsl(217, 91%, 55%));
+    padding: 2rem;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .header-content {
+        flex-direction: row;
+    }
+}
+
+.profile-image-wrapper {
+    position: relative;
+}
+
+.profile-image {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    box-shadow: 0 0 40px hsl(217, 91%, 55%, 0.2);
+}
+
+@media (min-width: 768px) {
+    .profile-image {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+.header-text {
+    flex: 1;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .header-text {
+        text-align: left;
+    }
+}
+
+.header-name {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .header-name {
+        font-size: 3rem;
+    }
+}
+
+.header-title {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: -20px;
+}
+
+@media (min-width: 768px) {
+    .header-title {
+        font-size: 1.25rem;
+    }
+}
+
+/* Tab Buttons */
+.tab-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    animation: slideUp 0.5s ease-out;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 0.75rem 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background: rgba(220, 230, 240, 0.5);
+    color: hsl(220, 20%, 10%);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tab-button:hover {
+    background: hsl(220, 15%, 95%);
+}
+
+.tab-button.active {
+    background: linear-gradient(135deg, hsl(217, 91%, 35%), hsl(217, 91%, 55%));
+    color: white;
+    box-shadow: 0 10px 30px -10px hsl(217, 91%, 35%, 0.3);
+}
+
+/* Content Card */
+.content-card {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: 0 10px 30px -10px hsl(217, 91%, 35%, 0.3);
+    animation: slideUp 0.5s ease-out;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 1.5rem;
+}
+
+.section-education {
+    margin-bottom: 1.5rem;
+    margin-top: -10px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hsl(220, 20%, 10%);
+    margin-bottom: 1rem;
+}
+
+.subsection-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: hsl(220, 20%, 10%);
+    margin-bottom: 0.75rem;
+    margin-top: -20px;
+}
+
+.section-text {
+    color: hsl(220, 10%, 45%);
+    line-height: 1.6;
+}
+
+/* Contact List */
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: hsl(220, 10%, 45%);
+}
+
+.contact-label {
+    font-weight: 500;
+    color: hsl(220, 20%, 10%);
+}
+
+/* Experience Items */
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.experience-item {
+    padding-left: 1rem;
+    border-left: 4px solid;
+}
+
+.experience-item.border-primary {
+    border-left-color: hsl(217, 91%, 35%);
+}
+
+.experience-item.border-accent {
+    border-left-color: hsl(35, 90%, 55%);
+}
+
+.experience-item.border-muted {
+    border-left-color: hsl(220, 15%, 95%);
+}
+
+.experience-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: hsl(220, 20%, 10%);
+}
+
+.experience-company {
+    font-size: 0.875rem;
+    color: hsl(220, 10%, 45%);
+    margin-top: 0.25rem;
+}
+
+.experience-description {
+    margin-top: 0.5rem;
+    color: hsl(220, 10%, 45%);
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-badge {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    background: linear-gradient(135deg, hsl(217, 91%, 35%), hsl(217, 91%, 55%));
+    color: white;
+    box-shadow: 0 10px 30px -10px hsl(217, 91%, 35%, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
