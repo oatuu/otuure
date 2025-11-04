@@ -299,7 +299,7 @@ body {
 /* --- Instagram Card Styling --- */
 .instagram-card {
   background: #fff;
-  border-radius: 20px;                 /* same roundness as other cards */
+  border-radius: 0.75rem;                 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border: 2px solid rgba(0, 0, 0, 0.05); /* subtle border to match site theme */
   padding: 1.5rem;
